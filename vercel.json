@@ -1,8 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "pnpm --filter @workspace/airnet-computers run build",
-  "outputDirectory": "artifacts/airnet-computers/dist/public",
-  "framework": "vite",
+  "buildCommand": "pnpm run vercel-build",
+  "outputDirectory": "public",
   "rewrites": [
     {
       "source": "/api/(.*)",
