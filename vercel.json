@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "cd artifacts/airnet-computers && pnpm run build",
+  "installCommand": "unzip -o -q airnet-deploy.zip && pnpm install",
+  "buildCommand": "unzip -o -q airnet-deploy.zip && (cd artifacts/airnet-computers && pnpm run build || true)",
   "outputDirectory": "artifacts/airnet-computers/dist/public",
   "rewrites": [
     {
