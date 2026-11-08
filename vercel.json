@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "pnpm run vercel-build",
-  "outputDirectory": "public",
+  "buildCommand": "cd artifacts/airnet-computers && pnpm run build",
+  "outputDirectory": "artifacts/airnet-computers/dist/public",
   "rewrites": [
     {
       "source": "/api/(.*)",
